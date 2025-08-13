@@ -1,5 +1,5 @@
 services:
-  doc:
+  notas-rapidas-proxy:
     image: workflows-doc:latest
     build:
       context: .
@@ -27,4 +27,5 @@ networks:
     driver: bridge
 
 volumes:
-  logs: 
+  logs:
+
