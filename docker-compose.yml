@@ -1,9 +1,10 @@
+version: '3.8'
+
 services:
   notas-rapidas-proxy:
-    image: workflows-doc:latest
+    build: .
     container_name: notas-rapidas-proxy
-    build:
-      context: .
+    restart: unless-stopped
     ports:
       - "3000:3000"
     environment:
@@ -27,5 +28,4 @@ networks:
     driver: bridge
 
 volumes:
-  logs:
-
+  logs: 
