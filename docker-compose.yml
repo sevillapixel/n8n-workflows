@@ -1,6 +1,7 @@
 services:
   notas-rapidas-proxy:
     image: workflows-doc:latest
+    container_name: notas-rapidas-proxy
     build:
       context: .
     ports:
